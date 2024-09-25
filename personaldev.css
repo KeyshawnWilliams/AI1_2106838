@@ -1,0 +1,13 @@
+.pillar{
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.31);
+    color: white;
+}
+ .margin{
+    margin: 15px;
+}
+
+.box-shadow{
+    box-shadow: 4px 4px 4px black inset;
+}
+

@@ -1,0 +1,135 @@
+
+/* Basic reset for consistency across browsers */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Resume container */
+.resume-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* Header */
+.resume-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.resume-header h1 {
+    font-size: 36px;
+    margin-bottom: 5px;
+}
+
+.resume-header p {
+    color: rgb(62, 61, 61);
+}
+
+/* Section titles */
+h2 {
+    border-bottom: 2px solid #000000;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+}
+
+/* Summary */
+.resume-objective p {
+    margin-bottom: 20px;
+}
+/* Education */
+.resume-education{
+    margin-bottom: 20px;
+    
+}
+/* Work experience */
+.resume-experience .experience-item {
+    margin-bottom: 20px;
+}
+
+.resume-experience .resume-education h3 {
+    color: #333;
+}
+
+.resume-experience p {
+    color: rgb(0, 0, 0);
+}
+
+.resume-experience ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.resume-experience ul li {
+    margin-bottom: 5px;
+}
+
+/* Skills */
+.resume-skills ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+
+@keyframes blink-shadow {
+    0% {
+        box-shadow: 0 0 30px rgb(255, 255, 255);
+    }
+    50% {
+        box-shadow: 0 0 40px rgb(21, 131, 51);
+    }
+    100% {
+        box-shadow: 0 0 30px rgb(136, 240, 16);
+    }
+}
+
+.blinking-shadow {
+
+    animation: blink-shadow 2s infinite;
+}
+
+
+.professcontainer{
+    display: flex;
+    justify-content: flex-start;
+    gap: 1%;
+    align-items: flex-start;
+    
+    
+    
+}
+.vision, .mission, .qualifications, .skills, .require{                                     
+    background-color: white;
+    margin: 25px;                  
+    border-radius: 10px;     
+    text-align: center;
+    flex-direction: column;
+    flex: 1 1 calc(20% - 20px); /*set equal space for 5 item for shrinking and growning*/
+    text-wrap: wrap;
+    transform: rotate(5deg);  /*Rotate the items in the profess -container by 5 degrees*/
+    box-shadow: 4px 4px 4px black inset;
+
+}
+.vision p, .mission p, .qualifications p, .skills p, .require p{
+    text-wrap: wrap;
+    margin: 10px;
+}
+.statements{
+    background: linear-gradient(to top, rgb(244, 242, 242), rgb(76, 84, 58));
+    border-radius: 10px;
+    border: 1px solid white;
+    height: 530px;
+    margin-top: 5%;
+}
+.statements:hover{
+    box-shadow: 2px 4px 2px black;
+}
+ul ul, ol{
+    margin-left: 19px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}

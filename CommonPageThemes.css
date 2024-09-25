@@ -1,0 +1,181 @@
+
+/*Index Page grid layout*/
+.grid-container {
+    display: grid;
+    grid-template-areas: /*High lights the area for the grid*/
+    'name name name name'
+    'image image Dob Dob'/*5 colums and 4 rows*/
+    'image image Height Height'
+    'image image nationality nationality'
+    'image image edu edu';
+  
+ 
+  
+    background: linear-gradient(to top, rgb(244, 242, 242), rgb(76, 84, 58));
+    /* padding: 2px; */
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 50px;
+    width: 55%;
+    padding: 1%;
+}
+.grid-container > div {/*Control the child element of the ,grid-container class*/
+    background-color: rgba(244, 238, 238, 0.8) transparent; 
+    /*Background set to transparent so that only the back ground of the parent element shows*/
+    text-align: center;
+    /* padding: 10px 0; */
+    font-size: 20px;
+    color: rgb(0, 0, 0);  
+
+}
+/*Identify and assign the grid positions (AREA)*/
+/*Grid feature will only be used on the home page */
+.name{
+    grid-area: name;
+    padding-bottom: 5px;
+    border-bottom: 2px solid black;
+
+    
+}
+.image{
+    grid-area: image;
+    padding-top: 5%;
+}
+.image img{
+    border-radius: 100%;
+    box-shadow: 4px 4px 4px 4px  black;
+}
+.Dob{
+    grid-area: Dob;
+    border-left: 1px solid black;
+}
+.Height{
+    grid-area: Height;
+    border-left: 1px solid black;
+}
+.edu{
+    grid-area: edu;
+    border-left: 1px solid black;
+}
+.nationality{
+    grid-area: nationality;
+    border-left: 1px solid black;
+}
+.head{
+    text-decoration: underline 2px solid rgb(0, 0, 0) ;
+}
+
+
+/*Container created for the footer */
+
+.container {
+    display: flex;       /* Use flexbox to place divs side by side */
+    justify-content: flex-start; /* Space them out equally */
+    align-items: flex-start; /* Align items at the start of the container */
+    /* padding: 1%; */
+    gap: 20%;
+    
+
+
+}
+
+.quick-links, .contact-info {
+    /* margin: 1px;  */
+    display: flex;
+    flex-direction: column; /* Ensure that the links inside are stacked vertically */
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+
+/*COMMON AREAS*/
+
+h1{
+    margin-bottom: 8px;
+    text-align: center;
+    color: #000000;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+body {
+    background-color: rgb(125, 122, 122);
+    margin: 15px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: 12pt; /* Adjust font-size */
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(0, 0, 0); 
+    justify-content: center;
+    text-wrap: wrap;
+   
+}
+
+footer{
+    margin-top: 5px;
+    padding-left: 320px;
+    margin-bottom: 5px;
+    
+    /* background:linear-gradient(rgb(39, 54, 184),rgb(124, 209, 82)); */
+}
+
+
+a {
+    text-decoration: none;
+    margin-bottom: 1%;
+    color: rgb(0, 0, 0);
+    font-size: 100%;
+}
+a:visited{
+    color: rgb(0, 0, 0);
+}
+a:hover{
+    color: rgb(249, 249, 249);
+
+}
+
+/*Navigation Stylings  */
+
+
+.menue{
+    text-align: center; 
+    border-bottom: 2px solid black;
+    border-radius: 20px;
+    background: linear-gradient(to top, rgb(244, 242, 242), rgb(76, 84, 58));
+}
+
+
+button{
+    display: flex;
+    background: linear-gradient(to top, rgb(244, 242, 242), rgb(76, 84, 58));
+    height: max-content;
+    color: rgb(0, 0, 0);
+    padding: 3px;
+   
+}
+
+.navi{
+    margin-top: 10%;
+    display: flex;            /* Aligns children (buttons) in a row */
+    gap:620px ;
+
+}
+
+.navi button{
+  
+    border-radius: 10px;
+    color: #000000;
+}
+.navi button:hover{
+    box-shadow: 2px 2px 4px rgb(138, 11, 11) ;
+}
+
+/*Control the bulleting positionto ensure it is closer to its object*/
+ul,ol {
+    padding-left: 0;  /* Remove default padding on the list */
+    margin-left: 0;   /* Optional: Remove margin (browser-dependent) */
+    list-style-position: inside;  /* Position bullets inside the content box */
+}
+
+li {
+    margin-left: -10px;  /* Bring the text closer to the bullet */
+    /* You can adjust this value according to your design */
+}
